@@ -6,7 +6,7 @@ import javax.persistence.EntityTransaction;
 import com.faces.motors.entities.Car;
 import com.faces.motors.utils.JPAUtil;
 
-public class CarJPA {
+public class CarJPATest {
 
 	public static void main(String[] args) {		
 		
