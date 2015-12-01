@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html">
+	
+	<h:head>
+		<title>Cadastro de Automóvel - Faces Motors</title>
+	</h:head>
+
+<h:body>
+	<h1>Cadastro de Automóvel</h1>
+	<h:form>
+		<h:panelGrid columns="2">
+			Marca:<h:inputText value="#{carBean.car.make}"/>
+			Modelo:<h:inputText value="#{carBean.car.model}"/>
+			Ano:<h:inputText value="#{carBean.car.year}"/>
+			<h:commandButton value="Salvar" action="#{carBean.save(carBean.car)}"/>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
