@@ -4,3 +4,4 @@ A Java Web Application with JSF and JPA.
 # Frameworks
 - MVC: JSF
 - ORM: Hibernate
+- UI: PrimeFaces
