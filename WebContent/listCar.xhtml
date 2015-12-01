@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		<title>Listagem de Automóveis - Faces Motors</title>
+	</h:head>
+
+<h:body>
+	<h1>Listagem de Automóveis</h1>
+	<h:form>
+		<p:dataTable value="#{carBean.cars}" var="car" border="1">
+		    <p:column headerText="Marca">
+		        <h:outputText value="#{car.make}" />
+		    </p:column>
+		 
+		    <p:column headerText="Modelo">
+		        <h:outputText value="#{car.model}" />
+		    </p:column>
+		 
+		    <p:column headerText="Ano">
+		        <h:outputText value="#{car.year}" />
+		    </p:column>
+		    <p:column headerText="Ações">
+				<p:commandLink action="#{carBean.remove(car)}">excluir</p:commandLink>
+			</p:column>
+		</p:dataTable>
+	</h:form>
+	<a href="index.jsf">Home</a>
+</h:body>
+</html>
